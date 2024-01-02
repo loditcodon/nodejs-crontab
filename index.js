@@ -69,10 +69,10 @@ async function fetchUrls(type) {
       }
     }
     const tableName = `${type}Url`; 
-    const sqldrop = `DROP TABLE ${tableName}`;
-    connection.query(sqldrop, (err, results) => {
+    const sqlDelete = `DELETE FROM ${tableName}`;
+    connection.query(sqlDelete, (err, results) => {
       if (err) {
-        console.error(`Error Drop data ${tableName} table:`, err);
+        console.error(`DELETE data ${tableName} table:`, err);
       }
     });
     const sql = `INSERT INTO ${tableName} (domain) VALUES ?`;
