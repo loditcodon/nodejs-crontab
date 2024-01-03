@@ -41,8 +41,8 @@ async function fetchUrls(type) {
       case 'Malicious':
         url = 'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-dnscrypt-blocked-names.txt';
         break;
-      case 'Fishing':
-        url = 'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-dnscrypt-blocked-names.txt';
+      case 'Phishing':
+        url = 'https://malware-filter.gitlab.io/malware-filter/phishing-filter-dnscrypt-blocked-names.txt';
         break;
       case 'Pup':
         url = 'https://malware-filter.gitlab.io/pup-filter/pup-filter.txt';
