@@ -22,13 +22,13 @@ connection.connect((err) => {
   }
 
   setInterval(() => fetchUrls('Malicious'), 5 * 60 * 1000);
-  setInterval(() => fetchUrls('Fishing'), 5 * 60 * 1000);
+  setInterval(() => fetchUrls('Phishing'), 5 * 60 * 1000);
   setInterval(() => fetchUrls('Pup'), 5 * 60 * 1000);
   setInterval(() => fetchUrls('Tracking'), 5 * 60 * 1000);
   setInterval(() => fetchUrls('Vnbadsite'), 5 * 60 * 1000);
 
   fetchUrls('Malicious');
-  fetchUrls('Fishing');
+  fetchUrls('Phishing');
   fetchUrls('Pup');
   fetchUrls('Tracking');
   fetchUrls('Vnbadsite');
